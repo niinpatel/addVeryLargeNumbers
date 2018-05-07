@@ -1,6 +1,6 @@
 /**
  * Program to add VERY large numbers in javascript
- * Note - numbers should be passed as strings
+ * Note - numbers should be passed as strings.
  * example -
  * add("15", "15");  // returns "30"
  *
@@ -10,7 +10,6 @@ function add(s1, s2) {
     let sum = "";
 
     let s1l = s1.length;
-
     let s2l = s2.length;
 
     let larger = (s1l > s2l) ? s1 : s2;
@@ -32,7 +31,7 @@ function add(s1, s2) {
         carry = parseInt(temp.substr(0, temp.length - 1));
         carry = (carry) ? carry : 0;
 
-        sum = (i === largerl - 1) ? carry + digitSum + sum : digitSum + sum;
+        sum = (i === largerl - 1) ? temp + sum : digitSum + sum;
 
     }
 
